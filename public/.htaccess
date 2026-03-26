@@ -1,0 +1,33 @@
+# Enable rewrite engine
+RewriteEngine On
+
+# Custom error pages
+ErrorDocument 404 /student-skill-share/public/errors/404.php
+ErrorDocument 500 /student-skill-share/public/errors/error.php
+
+# Prevent directory listing
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "^\.">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# PHP settings
+php_flag display_errors Off
+php_flag log_errors On
+php_value error_log ../logs/php_errors.log
+
+# Security headers
+<IfModule mod_headers.c>
+    Header set X-Content-Type-Options "nosniff"
+    Header set X-Frame-Options "SAMEORIGIN"
+    Header set X-XSS-Protection "1; mode=block"
+</IfModule>
+
+# Prevent access to config files
+<FilesMatch "(database\.php|config\.php)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>

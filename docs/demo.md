@@ -54,7 +54,7 @@
 
 ### 2. Chi tiết bài viết
 
-![Detail](images/post-detail.png)
+![Detail](images/post.png)
 
 **Chức năng:**
 - Nội dung đầy đủ

@@ -2,8 +2,6 @@
 
 Web chia sẻ kỹ năng cho sinh viên - Học LAMP Stack
 
-![Home Page](images/home.png)
-
 [![PHP](https://img.shields.io/badge/PHP-7.4+-777BB4?logo=php&logoColor=white)](https://php.net)
 [![MySQL](https://img.shields.io/badge/MySQL-5.7+-4479A1?logo=mysql&logoColor=white)](https://mysql.com)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
